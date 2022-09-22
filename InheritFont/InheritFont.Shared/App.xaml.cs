@@ -53,14 +53,10 @@ namespace InheritFont
                 // this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-            this.Resources.MergedDictionaries.Add(new Uno.Material.MaterialResources());
+           this.Resources.MergedDictionaries.Add(new Uno.Material.MaterialResources());
 
-            // Overlap the default colors with the application's colors palette. 
-            //Resources.MergedDictionaries.Add(new Uno.Material.MaterialColors() { OverrideSource = "ms-appx:///theme/Uno.Material.Colors.xaml" });
-            //Resources.MergedDictionaries.Add(new Uno.Toolkit.UI.Material.MaterialToolkitResources());
-
-            //Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("ms-appx:///theme/Theme.xaml") });
-
+           
+           
 #if NET5_0 && WINDOWS
             _window = new Window();
             _window.Activate();
